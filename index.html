@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation3</title>
+  <style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card{
+      width: 400px;
+      border: 1px solid rgb(193, 182, 182); 
+      border-radius: 5px; 
+      position: relative;
+      overflow: hidden;
+    }
+    .card-header{
+        padding: 0px 10px;
+    }
+    .card-content{
+        padding: 0px 10px;
+    }
+    .loader{
+        width: 300px;
+        height: 2px;
+        background: teal;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        animation:leftandright 2s infinite ;
+        
+    }
+    @keyframes leftandright{
+        0%{
+            left: -300px;
+        }
+        100%{
+            left: 400px;
+        }
+    }
+  </style>
+</head>
+<body>
+   <div class="card">
+    <div class="card-header">
+        <h1>This is the Title</h1>
+    </div>
+    <div class="card-content">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ut vitae ipsam quibusdam accusamus repellendus vel quod fugit natus soluta eaque perferendis harum in culpa, optio modi aperiam numquam similique!</p>
+    </div>
+    <div class="loader"></div>
+   </div> 
+</body>
+</html>
